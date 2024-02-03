@@ -5,14 +5,12 @@
   letter-spacing: -0.12px;
   color: #fff;
   border-radius: 150px;
+  border: none;
   background-color: $dark-pink;
   line-height: normal;
   transition: all 0.2s ease;
 
   &:hover {
     background-color: $pink-active;
-  }
-  &:active {
-    opacity: 0.5;
   }
 }

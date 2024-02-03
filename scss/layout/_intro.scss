@@ -1,0 +1,108 @@
+.intro {
+  padding: 152px 0;
+  background-image: url('../images/intro-bg.png');
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 400px) bottom calc(50% - 20px);
+  &__title {
+    width: 546px;
+    font-size: 72px;
+    font-family: 'DM Serif Display', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    color: $san-juan-blue;
+    margin-bottom: 21px;
+  }
+
+  .wrapper__input {
+    width: 445px;
+    position: relative;
+    .input {
+      width: 445px;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 15px 27px;
+      padding-right: 178px;
+      margin-bottom: 16px;
+      outline: none;
+      border: none;
+      border-radius: 150px;
+      color: $san-juan-blue;
+      cursor: pointer;
+      &::placeholder {
+        color: $san-juan-blue;
+        opacity: 0.5;
+      }
+    }
+
+    .input__button {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    margin-left: 27px;
+    color: $san-juan-blue;
+    opacity: 0.7;
+
+    & > a {
+      font-weight: bold;
+      color: $san-juan-blue;
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 320px) {
+    & {
+      background-position: top right calc(50% - 25px);
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 396px;
+      }
+      &__title {
+        width: auto;
+        text-align: center;
+        padding: 40px 0 0 0;
+        font-size: 56px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    & {
+      background-position: top left calc(50% + 25px);
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 396px;
+      }
+      &__title {
+        width: auto;
+        text-align: center;
+        padding: 40px 0 0 0;
+        font-size: 56px;
+      }
+
+      .wrapper__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .input {
+          width: 327px;
+          padding-right: 0;
+        }
+        .input__button {
+          position: static;
+          width: 327px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
