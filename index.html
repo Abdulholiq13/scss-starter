@@ -3,10 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sass</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>PayApi</title>
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <p>Hello, World!</p>
+    <!-- Vusually-Hidden -->
+    <h1 class="visually-hidden">PayApi</h1>
+    <!-- Heade -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="index.html">
+          <svg class="logo__img">
+            <use xlink:href="./images/sprites.svg#logo"></use>
+          </svg>
+        </a>
+        <!-- NavBar -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">about</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Button, Link -->
+        <a class="button header__button" href="#">Schedule a Demo</a>
+        <button class="header__menu-toggle">
+          <svg class="header__menu-toggle-img">
+            <use xlink:href="./images/sprites.svg#menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
   </body>
 </html>
