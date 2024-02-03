@@ -72,7 +72,7 @@
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 625px) and (min-width: 320px) {
     & {
       background-position: top left calc(50% + 25px);
 
