@@ -79,6 +79,7 @@
   @media only screen and (max-width: 678px) and (min-width: 320px) {
     & {
       background-position: top 200px center;
+      background-size: cover;
       &__container {
         text-align: center;
         flex-direction: column;

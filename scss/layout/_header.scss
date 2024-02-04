@@ -9,7 +9,7 @@
 
   .logo {
     line-height: 0;
-    // margin-right: 64px;
+    margin-right: 64px;
     &__img {
       width: 135px;
       height: 38px;
@@ -76,7 +76,7 @@
     }
   }
 
-  @media only screen and (max-width: 700px) and (min-width: 320px) {
+  @media only screen and (max-width: 700px) and (min-width: 310px) {
     .nav {
       display: none;
     }

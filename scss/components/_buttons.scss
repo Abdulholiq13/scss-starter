@@ -14,3 +14,13 @@
     background-color: $pink-active;
   }
 }
+
+.work__btn {
+  background-color: transparent;
+  border: 1px solid $water-white;
+
+  &:hover {
+    background-color: $water-white;
+    color: $mirage-blue;
+  }
+}
