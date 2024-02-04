@@ -1,0 +1,84 @@
+.implement {
+  width: 100%;
+  padding: 150px 0;
+
+  .implement__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .implement__img {
+    margin-right: 125px;
+  }
+
+  .implement__content {
+    width: 445px;
+
+    .implement__text {
+      color: $san-juan-blue-light;
+    }
+  }
+
+  .implement__title {
+    font-size: 48px;
+    font-family: 'DM Serif Display', 'Arial', sans-serif;
+    color: $san-juan-blue;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .implement__container {
+      flex-direction: column-reverse;
+    }
+
+    .implement__img {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 48px;
+    }
+    .implement__content {
+      width: 573px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 595px) {
+    .implement__container {
+      flex-direction: column-reverse;
+    }
+
+    .implement__img {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 48px;
+    }
+    .implement__content {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    & {
+      .implement__container {
+        flex-direction: column-reverse;
+        .implement__content {
+          width: auto;
+          text-align: center;
+          .implement__title {
+            font-size: 36px;
+            line-height: 36px;
+          }
+        }
+      }
+
+      .implement__img {
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
