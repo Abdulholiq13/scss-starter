@@ -1,0 +1,50 @@
+.features {
+  width: 100%;
+  padding-bottom: 96px;
+
+  .features__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .features__list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+  }
+
+  .features__item {
+    position: relative;
+    text-align: center;
+
+    & > img {
+      margin-bottom: 32px;
+    }
+  }
+
+  .features__title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    color: $san-juan-blue;
+  }
+
+  .features__text {
+    color: $san-juan-blue-light;
+  }
+
+  @media only screen and (max-width: 768px) {
+    & {
+      &__container {
+        justify-content: center;
+      }
+      .features__list {
+        flex-direction: column;
+
+        .features__item {
+          width: 320px;
+        }
+      }
+    }
+  }
+}
